@@ -1,30 +1,59 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/1MZiuvVq)
-# Welcome to the course CSYE6200 - Concepts Of OOD
-> Northeastern University, College of Engineering
+# Scarlet Lifeline - Blood Donation Application 🩸  
 
+A **full-stack blood donation management system** that connects **donors** with **blood banks and hospitals**, ensuring real-time inventory tracking and secure user management.  
 
-## Professor: Daniel Peters
+## 🚀 Features  
+- 🩸 **Donor Registration & Management** – Users can register as donors and update their availability.  
+- 🏥 **Blood Bank Inventory Tracking** – Tracks available blood units in real time.  
+- 🔐 **Secure Authentication** – Uses **BCrypt** for password hashing and **Spring Security** for role-based access.  
+- 📅 **Donation Scheduling** – Allows users to schedule donation appointments.  
+- 📊 **Admin Dashboard** – View donor statistics, manage inventory, and generate reports.  
 
-### Requirements
-1. Eclipse or VS Code or IntelliJ.
+## 🛠 Tech Stack  
 
-Note: If you are using Eclipse, please have git CLI installed on your system or GitHub Desktop to commit the code in this repository
+### **Backend:**  
+- **Java (Spring Boot)** – RESTful API development  
+- **MongoDB** – NoSQL database for managing donor and inventory data  
+- **Spring Security** – Secure authentication and role-based access control  
+- **BCrypt** – Secure password encryption  
 
-### SetUp Instructions
-1. Please clone the repository on your local system
-2. For Eclipse Import the project as Existing Maven Project, For IntelliJ you can directlty open it using 'Get from VCS'.
-4. All code should be pushed to the main branch
-3. Ensure the GitHub actions are successful post push
+### **Frontend:**  
+- **React.js** – Interactive UI for users and admins  
 
-Submissions will have deadlines, failed GitHub Actions would result in point deductions.
+### **DevOps & Tools:**  
+- **Docker** – Containerized deployment  
+- **GitHub Actions** – CI/CD pipeline  
+- **Postman** – API testing  
+ 
 
-### References
-1. Cloning a Repository: <https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository>
-2. Any GitHub Setup: Please refer to the Git & GitHub Fundamentals Repository shared to you by your respective TA and refer the README.md section
+## 🔧 Setup & Installation  
 
-Please reach out to your respective TA if you need any help in regards with submission/ GitHub
+### 1️⃣ Clone the Repository  
+\`\`\`bash
+git clone https://github.com/your-username/scarlet-lifeline.git
+cd scarlet-lifeline
+\`\`\`
 
-Author:
-- Gokul Jayavel (jayavel.g@northeastern.edu)
-- Siddharth Dumbre (dumbre.si@northeastern.edu)
-- Vamsi Naradasu (naradasu.v@northeastern.edu)
+### 2️⃣ Backend Setup  
+\`\`\`bash
+cd backend
+mvn clean install
+mvn spring-boot:run
+\`\`\`
+
+### 3️⃣ Frontend Setup  
+\`\`\`bash
+cd frontend
+npm install
+npm start
+\`\`\`
+
+## 📝 API Endpoints  
+
+| Method | Endpoint | Description |
+|--------|---------|------------|
+| \`POST\` | \`/api/donors/register\` | Register a new donor |
+| \`GET\`  | \`/api/bloodbanks/inventory\` | Get blood inventory details |
+| \`POST\` | \`/api/donations/schedule\` | Schedule a donation appointment |
+| \`GET\`  | \`/api/admin/stats\` | Fetch admin dashboard statistics |
+
