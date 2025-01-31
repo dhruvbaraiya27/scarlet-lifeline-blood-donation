@@ -30,7 +30,7 @@ A **full-stack blood donation management system** that connects **donors** with 
 
 ###  Clone the Repository  
 \`\`\`bash
-git clone https://github.com/your-username/scarlet-lifeline.git
+git clone https://github.com/dhruvbaraiya27/scarlet-lifeline.git
 cd scarlet-lifeline
 \`\`\`
 
